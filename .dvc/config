@@ -1,4 +1,6 @@
 [core]
-    remote = storage
+    remote = origin
 ['remote "storage"']
     url = https://remote.dvc.org/get-started-pools
+['remote "origin"']
+    url = /Projects/example_dvc_segmentation

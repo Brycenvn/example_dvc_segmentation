@@ -1,9 +1,51 @@
 params:
 - results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
+- results/train/params.yaml
 metrics:
 - results/train/metrics.json
 - results/evaluate/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/train/metrics.json
+- results/evaluate/metrics.json
 plots:
+- results/train/plots/metrics:
+    x: step
+- results/evaluate/plots/images
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
+- results/train/plots/metrics:
+    x: step
 - results/train/plots/metrics:
     x: step
 - results/evaluate/plots/images

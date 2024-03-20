@@ -10,8 +10,8 @@ stages:
       nfiles: 183
     - path: src/data_split.py
       hash: md5
-      md5: 280fa1684c5496fb9f76ff8c96bd2561
-      size: 1035
+      md5: 2c9440b508eca05f7a6416283a48fbf9
+      size: 1068
     params:
       params.yaml:
         base:
@@ -40,8 +40,8 @@ stages:
       nfiles: 158
     - path: src/train.py
       hash: md5
-      md5: 9db72f1631f53eecb232bc48992c425a
-      size: 2507
+      md5: 2718d920b886e9411bd27f240a209310
+      size: 2589
     params:
       params.yaml:
         base:
@@ -57,16 +57,16 @@ stages:
     outs:
     - path: models/model.pkl
       hash: md5
-      md5: 63cb30df484bfa1d6ea2cdebac74876c
-      size: 201725
+      md5: 11b44a74acd26838ce066cb8b0cb323e
+      size: 201341
     - path: models/model.pth
       hash: md5
-      md5: 07b113fe1ab01de2d8a5453dccacdd3e
-      size: 165147
+      md5: c02b6bf761b950285a50874f992f9cef
+      size: 164827
     - path: results/train
       hash: md5
-      md5: a26429ff680d9b01c7e92043821bf41c.dir
-      size: 955
+      md5: e3202331e86aa509d4468791b7128001.dir
+      size: 1000
       nfiles: 5
   evaluate:
     cmd: python src/evaluate.py
@@ -78,12 +78,12 @@ stages:
       nfiles: 24
     - path: models/model.pkl
       hash: md5
-      md5: 63cb30df484bfa1d6ea2cdebac74876c
-      size: 201725
+      md5: 11b44a74acd26838ce066cb8b0cb323e
+      size: 201341
     - path: src/evaluate.py
       hash: md5
-      md5: 84d2fd3b371546730396a763a51527a0
-      size: 3322
+      md5: 071ddd2bc218c064569f03296fdd32ce
+      size: 3423
     params:
       params.yaml:
         base:
@@ -93,8 +93,8 @@ stages:
     outs:
     - path: results/evaluate
       hash: md5
-      md5: 34985c391291e22ac0cfdf6e83ec7268.dir
-      size: 1257936
+      md5: 15466d06e5358fb76e9ee544e086df0e.dir
+      size: 1257560
       nfiles: 11
   sagemaker:
     cmd: cp models/model.pth sagemaker/code/model.pth && cd sagemaker && tar -cpzf
